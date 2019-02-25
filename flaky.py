@@ -115,20 +115,4 @@ def pullrequest_flake8_check(url, org, repo, number, token):
             )
             yield path, count, results.splitlines()
 
-#org = 'Dealertrack'
-#repo = 'dt'
-#number = 1178
-#
-#output = [r'Violations:', '', '']
-#for result in pullrequest_flake8_check(org, repo, number):
-#    print result[0], result[1]
-#    if not result[1]:
-#        continue
-#    #output.append(r'    {} ({})'.format(result[0], result[1]))
-#    output.extend([r'    {}'.format(r) for r in result[2]])
-#    output.append('')
-#
-#output = os.linesep.join(output)
-#
-#pr_issue = get_issue(org, repo, number)
-#pr_issue.create_comment(output)
+
